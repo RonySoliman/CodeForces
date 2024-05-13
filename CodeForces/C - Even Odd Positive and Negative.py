@@ -7,7 +7,7 @@
 # C. Even, Odd, Positive and Negative
 # https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/C
 
-values = input()
+values = int(input())
 checker = list(map(int, input().split()))
  
 for i in range(len(checker)):
@@ -18,9 +18,9 @@ for i in range(len(checker)):
             Even+=1
         else: 
             Odd+=1
-        if (int(i)>0):
+        if (int(i)>0) & (int(i)!=0):
             Positive+=1
-        else:
+        elif (int(i)<0) & (int(i) !=0):
             Negative+=1
  
     print(f"Even: {Even}") #
