@@ -3,12 +3,11 @@
 
 # In[4]:
 
-
 # H. One Prime
 # https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/H
 
 value = int(input())
-if num > 1:
+if value > 1:
     for i in range(2, (value//2)+1):
         if (value % i) == 0:
             print("NO")
