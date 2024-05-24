@@ -7,12 +7,17 @@
 # D. Fixed Password
 # https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/D
 
-
-value = list(map(int, input().split()))
-for i in value:
-    if int(i) != 1999:
-        print("Wrong")
-    else:
-        print("Correct")
-    continue
-
+def check_password(password):
+    return password == "1999"
+ 
+# Read input until the correct password is entered
+while True:
+    try:
+        password = input()
+        if check_password(password):
+            print("Correct")
+            break
+        else:
+            print("Wrong")
+    except EOFError:
+        break
