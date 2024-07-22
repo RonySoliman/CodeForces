@@ -1,3 +1,6 @@
+# G. Factorial
+# https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/G
+
 def factorial(n):
     if n == 0:
         return 1
@@ -12,7 +15,7 @@ def main():
     
     for _ in range(T):
         n = int(input("Enter a number: "))
-        test_cases.append(n)
+        test_cases.append(n) # here it stores the values I input, in the example it stores [5,3]
     
     results = [factorial(n) for n in test_cases]
     
